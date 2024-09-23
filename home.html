@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="img/lucy.jpeg" class="rounded-full"
+        type="image/x-icon">
+    <title>Document</title>
+    <style>
+        /* for tablet */
+        @media (max-width: 800px) {
+            #nav {
+                width: 100%;
+            }
+
+        }
+
+
+        .navbar-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #navToggle {
+            font-size: 3rem;
+            background-color: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-links {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 50px;
+            width: 100%;
+            height: 1000px;
+        }
+
+        .mobile-links a {
+            padding: 15px;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+        }
+
+        .mobile-links a:hover {
+            background-color: transparent;
+        }
+
+        .navbar-mobile button {
+            margin-right: 3px;
+        }
+
+        .active {
+            color: rgb(193, 3, 98);
+        }
+    </style>
+</head>
+
+<body class="">
+    <!-- navigation bar -->
+    <nav id="nav" class="shadow-lg fixed top-0 z-20 bg-white h-24 md:h-28 lg:h-36 lg:w-full  ">
+        <div class="container flex justify-between  py-6 md:py-9 lg:py-10">
+            <h1 class="pl-7 text-center font-bold text-2xl lg:text-4xl sm:text-left"><i class="fa fa-user-circle-o mr-2"
+                    aria-hidden="true"></i><span class="text-pink-700">Lucy</span> Wangui.</h1>
+
+            <div class="navbar hidden lg:flex flex-row space-x-32 text-2xl font-bold">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#Portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+
+            <!-- for small devices -->
+            <diva class="navbar-mobile lg:hidden md:block sm:hidden text-2xl font-extrabold">
+                <button class="text-pink-700 " id="navToggle"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <!-- container element -->
+                <div class="mobile-links hidden bg-pink-800">
+                    <button class="bg-transparent" id="navClose"> <i><i class="fa fa-close text-5xl"
+                                aria-hidden="true"></i></i></button>
+                    <a href="#home">Home</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#Portfolio">Portfolio</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+
+                    <div class="text-center mt-24 text-dark-900">
+                        <a href="https://github.com/kabzngarang254"><i
+                                class="fa fa-github text-3xl lg:text-5xl hover:text-pink-900"
+                                aria-hidden="true"></i></a>
+
+                        <a href="https://www.linkedin.com/in/james-njoroge-b76b56292/"><i
+                                class="fa fa-linkedin text-3xl lg:text-5xl hover:text-pink-900"
+                                aria-hidden="true"></i></a>>
+                        <!-- whatsapp -->
+
+                        <a href=""><i class="fa fa-whatsapp text-3xl lg:text-5xl hover:text-pink-900"
+                                aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </diva>
+
+
+        </div>
+
+    </nav>
+
+    <!-- content -->
+    <div id="home"
+        class="container flex flex-col lg:flex-row items-center lg:items-start mt-28 lg:mt-52 ml-0 lg:ml-0  gap-20">
+
+        <!-- Left Side -->
+        <div class="text-center lg:text-left items-center justify-center ml-0 lg:ml-10  ">
+            <div class="pt-4 lg:pt-0 justify-between space-y-4 lg:space-y-5 ">
+                <h4 class="text-gray-900 font-bold text-3xl lg:text-4xl">Hello, It's Me</h4>
+                <h1 class="text-gray-800 font-extrabold text-5xl lg:text-7xl"><span class="text-pink-700">Lucy</span>
+                    Wangui</h1>
+                <h3 class="text-gray-800 font-bold text-4xl lg:text-4xl">And I'm a Web Developer|</h3>
+                <p class="text-gray-900 font-medium text-xl lg:text-3xl ">I specialize in developing and building
+                    responsive
+                    websites <br> that are not only beautiful but also enhance seamless user experience</p>
+
+                <!-- button -->
+                <a href="#contact"><button class="btn bg-pink-600 text-white p-4 lg:p-6 rounded-3xl">Hire
+                        Me</button></a>
+
+                <!-- social links -->
+                <div class="flex justify-center lg:justify-start space-x-4 mt-4">
+                    <h1 class="text-2xl lg:text-4xl  font-bold">Join Me</h1>
+                    <!-- github -->
+                    <a href="https://github.com/lucykui19?tab=repositories"><i
+                            class="fa fa-github text-2xl lg:text-3xl hover:text-pink-900" aria-hidden="true"></i></a>
+                    <!-- whatsapp -->
+                    <a href=""><i class="fa fa-whatsapp text-2xl lg:text-3xl hover:text-pink-900"
+                            aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Side (Image) -->
+        <div class="p-0 lg:p-8  rounded-full">
+            <img src="img/lucy.jpeg" alt=""
+                class="rounded-3xl shadow-lg transform transition-all hover:-translate-y-8 duration-500 hover:shadow-2xl hover:shadow-black w-60 lg:w-72  mx-auto lg:mx-0">
+        </div>
+    </div>
+
+    <!-- Web Development -->
+    <h1 id="skills" class="mb-20 mt-10 text-4xl lg:text-6xl md:text-5xl text-center font-extrabold "> My Skills</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 mx-auto p-5">
+
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-html-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">HTML</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-css-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">CSS</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:-translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-javascript-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl  lg:text-3xl  mt-4">Javascript</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-bootstrap-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl  lg:text-3xl  mt-4">BootStrap</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40  mx-auto" src="img/icons8-tailwind-css-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">TailWind CSS </h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-react-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">React.Js</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-php-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">PHP</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/laravel.svg" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">Laravel</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-vue-js-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">Vue Js</h2>
+        </div>
+        <div
+            class="bg-white p-6 rounded-lg transform transition-all hover:translate-y-2 duration-300 shadow-lg hover:shadow-2xl">
+            <img class="w-20 lg:w-40 mx-auto" src="img/icons8-node-js-96.png" alt="">
+            <h2 class="text-center font-extrabold text-xl lg:text-3xl  mt-4">Node Js</h2>
+        </div>
+
+    </div>
+
+    <!-- portfolio -->
+
+    <div id="Portfolio" class="justify-center items-center mt-20 text-center">
+        <h1 class="text-pink-700 text-4xl lg:text-6xl font-bold mb-8">Portfolio</h1>
+
+        <p class="text-lg lg:text-2xl text-gray-700 mb-16 max-w-3xl mx-auto">
+            Welcome to my portfolio! Here are some of my favorite projects that I've been working on. If you're
+            interested
+            in exploring more, feel free to visit my
+            <a href="https://github.com/your-github-username" target="_blank"
+                class="text-pink-600 font-semibold hover:text-pink-800">GitHub profile</a>
+            where you'll find a diverse collection of my work. Let's connect and build something amazing together!
+        </p>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- about -->
+
+    <div id="about" class="mt-16 flex flex-col items-center">
+        <h1 class="text-4xl lg:text-6xl text-center font-extrabold text-gray-800 mb-4">ABOUT ME</h1>
+        <h2 class="text-center text-3xl lg:text-5xl font-extrabold mb-6 text-pink-600">Hello, I'm Lucy</h2>
+        <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-8 max-w-7xl  p-10 mt-10 bg-gray-300 shadow-xl rounded-lg">
+            <div class="flex flex-col justify-center">
+                <p class="text-lg lg:text-2xl text-gray-700 mb-4 font-bold">
+                    I am a passionate software developer currently pursuing my education. My journey into the world of
+                    coding
+                    began in 2023, and since then, I've been fascinated by the endless possibilities that programming
+                    offers.
+                    My primary focus is on Front-end & Back-end development and mobile apps.
+                </p>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <p class="text-lg lg:text-2xl text-gray-700 mb-4 font-bold">
+                    Throughout my academic journey, I've had the opportunity to work on various projects that have honed
+                    my
+                    skills in HTML & CSS, and PHP. My goal is to become a software developer and create a vast array of
+                    apps
+                    that I've wished to create.
+                </p>
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <p class="text-lg lg:text-2xl text-gray-700 mb-4 font-bold">
+                    When I'm not coding, you can find me gaming, listening to music, or cycling. I believe in continuous
+                    learning and am excited about the evolving landscape of technology. Let's connect and create
+                    something
+                    amazing together!
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- contact section -->
+    <section class="max-w-7xl mx-auto px-5 my-28" id="contact">
+        <div class="text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl text-pink-800 font-extrabold">Let's Talk</h1>
+            <h2 class="text-3xl md:text-5xl lg:text-6xl text-pink-500 font-bold">Have a Project Idea?</h2>
+            <h2 class="text-3xl md:text-5xl lg:text-6xl text-pink-500 font-bold">Feel Free to Contact Me</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Contact Information -->
+
+            <div
+                class="flex flex-col justify-center items-center md:items-start bg-gradient-to-r from-pink-600 via-pink-700 to-pink-600 rounded-lg shadow-lg p-8 mt-10">
+                <div class=" ">
+                    <h2 class="text-5xl font-bold mb-10 text-white">Talk To Me</h2>
+                    <div class="flex justify-center md:justify-start mb-3">
+                        <img src="img/icons8-phone-64.png" alt="">
+                        <img src="img/icons8-work-64.png" alt="">
+                    </div>
+                    <p class="text-white mt-10"><i class="fa-solid fa-envelope"></i> <span class="text-3xl">Email :
+                        </span> kui.lucy.wangui@gmail.com</p>
+                    <p class="text-white mt-3"><i class="fa-solid fa-phone"></i> <span class="text-3xl">Contact :
+                        </span> +254746817117</p>
+
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <div class="flex flex-col justify-center items-center">
+                    <div class="text-center mt-10">
+                        <h2 class="text-2xl lg:text-4xl font-bold mb-3">Send me a message</h2>
+                    </div>
+                    <div class="mt-4 w-full">
+                        <input type="text" class="w-full bg-pink-100  rounded-lg py-3 px-4 mb-3"
+                            placeholder="Your Name">
+                        <input type="text" class="w-full bg-pink-100  rounded-lg py-3 px-4 mb-3"
+                            placeholder="Your Email">
+                        <textarea class="w-full bg-pink-100  rounded-lg py-3 px-4 h-32 mb-3"
+                            placeholder="Write your message"></textarea>
+                        <button
+                            class="bg-pink-800 justify-center items-center ml-28 lg:ml-48 text-white py-3 px-8 rounded-lg hover:bg-blue-600 transition duration-300">Send
+                            <i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer -->
+
+    <div class="bg-gray-900 justify-between text-center lg:py-10 lg:px-10  ml-auto mt-14">
+        <h1 class="font-bold text-3xl lg:text-5xl text-white pt-5 lg:pt-0">Lucy Wangui</h1>
+        <div class="flex flex-col lg:flex-row justify-center lg:space-x-10 pt-10 lg:pt-20">
+            <a href="#home" class="text-2xl lg:text-4xl text-gray-400 hover:text-pink-900">Home</a>
+            <a href="#skills" class="text-2xl lg:text-4xl text-gray-400 hover:text-pink-900">Skills</a>
+            <a href="#Portfolio" class="text-2xl lg:text-4xl text-gray-400 hover:text-pink-900">Portfolio</a>
+            <a href="#about" class="text-2xl lg:text-4xl text-gray-400 hover:text-pink-900">About</a>
+            <a href="#contact" class="text-2xl lg:text-4xl text-gray-400 hover:text-pink-900">Contact</a>
+        </div>
+
+        <div id="icons" class="flex justify-center gap-10 pt-10 pb-8 lg:pb-10">
+            <a href="https://github.com/lucykui19?tab=repositories" class="text-white hover:text-pink-900"><i
+                    class="fab fa-github text-2xl lg:text-4xl"></i></a>
+        </div>
+
+        <hr class="border-gray-700">
+
+        <p class="text-gray-500 text-2xl lg:text-3xl pt-5">&copy; Copyright 2024 James Kabogo. All Rights Reserved</p>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
